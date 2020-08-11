@@ -1,0 +1,55 @@
+{
+  "name": "webdriverio-appium",
+  "version": "1.0.0",
+  "description": "Base proyect for mobile automation with webdriverio",
+  "main": "index.js",
+  "scripts": {
+    "code:check": "yarn code:lint ",
+    "lint-fix": "eslint \"**/*.js\" --fix --ignore-pattern ./.eslintrc.js",
+    "code:lint": "eslint .",
+    "android.app": "./node_modules/.bin/wdio ./config/wdio.android.app.conf.js",
+    "ios.app": "./node_modules/.bin/wdio ./config/wdio.ios.app.conf.js",
+    "lint-diff": "git diff --name-only --cached --relative | grep \\\\.js$ | xargs eslint",
+    "precommit": "npm run lint-diff"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Wolox/appium-bootstrap.git"
+  },
+  "author": "Gabriel Bori - Wolox",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Wolox/appium-bootstrap/issues"
+  },
+  "homepage": "https://github.com/Wolox/appium-bootstrap#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.5",
+    "@babel/register": "^7.9.0",
+    "@babel/traverse": "^7.9.5",
+    "@babel/types": "^7.9.5",
+    "babel-eslint": "^10.1.0",
+    "webdriverio": "^6.0.13",
+    "@wdio/appium-service": "^6.4.0",
+    "@wdio/cli": "^6.4.0",
+    "@wdio/cucumber-framework": "^6.4.0",
+    "@wdio/local-runner": "^6.4.0",
+    "@wdio/spec-reporter": "^6.4.0",
+    "@wdio/sync": "^6.4.0",
+    "appium": "^1.18.0",
+    "dotenv": "^8.2.0",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "eslint-plugin-wdio": "^6.0.12",
+    "husky": "^0.14.3",
+    "prettier": "^2.0.5",
+    "prettier-eslint": "^11.0.0"
+  }
+}
