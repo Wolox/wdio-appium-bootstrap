@@ -1,4 +1,4 @@
-import { DEFAULT_TIMEOUT } from '../constants';
+import { DEFAULT_TIMEOUT } from '../config/constants';
 
 export default class AppScreen {
   constructor(selector) {
