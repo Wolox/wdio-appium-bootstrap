@@ -13,9 +13,10 @@ config.capabilities = [
     'appium:deviceName': 'Android Emulator',
     'appium:orientation': 'PORTRAIT',
     'appium:automationName': 'UiAutomator2',
-    'appium:app': '',
+    'appium:app': process.env.ANDROID_APP,
     'appium:newCommandTimeout': 2400,
-    'appium:chromedriverDisableBuildCheck': true
+    'appium:chromedriverDisableBuildCheck': true,
+
   },
 ];
 

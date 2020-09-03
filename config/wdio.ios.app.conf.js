@@ -9,12 +9,14 @@ config.capabilities = [
   {
     maxInstances: 1,
     platformName: 'iOS',
-    'appium:deviceName': 'iPhone Xs Max',
+    'appium:deviceName': 'iPhone 11',
     'appium:platformVersion': '13.4',
     'appium:orientation': 'PORTRAIT',
     'appium:automationName': 'XCUITest',
-    'appium:app': '',
+    'appium:app': '/Users/gabrielbori/Documents/Automation/woloxBootstrap/appium-bootstrap/config/app/iOS-Simulator-NativeDemoApp-0.2.1.app',
     'appium:newCommandTimeout': 2400,
+    'appium:noReset': false,
+    'appium:fullReset': false,
   }
 
 ];
