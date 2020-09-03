@@ -5,7 +5,7 @@ const SELECTORS = {
     : '~Home-screen',
   TEXT: driver.isAndroid
     ? '-android uiautomator: new UiSelector().text("{TEXT}")'
-    : ''
+    : '//XCUIElementTypeStaticText[@name="{TEXT}"]'
 };
 
 class HomeScreen extends AppScreen {

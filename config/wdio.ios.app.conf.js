@@ -13,10 +13,9 @@ config.capabilities = [
     'appium:platformVersion': '13.4',
     'appium:orientation': 'PORTRAIT',
     'appium:automationName': 'XCUITest',
-    'appium:app': '/Users/gabrielbori/Documents/Automation/woloxBootstrap/appium-bootstrap/config/app/iOS-Simulator-NativeDemoApp-0.2.1.app',
+    'appium:app': process.env.IOS_APP,
     'appium:newCommandTimeout': 2400,
-    'appium:noReset': false,
-    'appium:fullReset': false,
+    'appium:noReset': true
   }
 
 ];
