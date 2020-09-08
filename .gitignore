@@ -1,0 +1,12 @@
+package-lock.json
+
+#reports
+/reports
+/test-report
+bugreport*
+
+yarn.lock
+.env
+.vscode/
+users.json
+node_modules
