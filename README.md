@@ -39,7 +39,7 @@ To check if everything is ready to run the tests, [Appium doctor](https://github
 Probably this things will be needed:
 - Install carthage(Just for ios:  `brew install carthage`)
 - Set environment variables in your pc. (*)
-- In mac, give permissions to appium (https://support.apple.com/en-us/HT202491)
+- In mac, give permissions to appium. Check it [here](https://support.apple.com/en-us/HT202491)
 - Run the following commands to set xcrum:` sudo xcode-select -s /Applications/Xcode.app`
 - Run `sudo xcode-select --reset`
 
