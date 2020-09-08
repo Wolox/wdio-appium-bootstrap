@@ -1,6 +1,6 @@
 # Appium Bootstrap
 
-This projects is the base to start automating mobile apps. 
+This project is the base to start automating mobile apps. 
 
 
 ## Table of contents 

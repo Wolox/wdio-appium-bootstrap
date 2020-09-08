@@ -13,6 +13,7 @@ Then(/^i should see a the text (.*)$/, text => {
   const textElement = HomeScreen.getElementByText(text);
   expect(textElement.isDisplayed()).toBe(true);
 });
+
 Then(/^i close the app/, () => {
   driver.closeApp();
 });

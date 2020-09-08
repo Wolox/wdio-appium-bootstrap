@@ -6,6 +6,7 @@ config.cucumberOpts.tagExpression = `${config.cucumberOpts.tagExpression} and no
 // ============
 // For all capabilities please check
 // http://appium.io/docs/en/writing-running-appium/caps/#general-capabilities
+
 config.capabilities = [
   {
     platformName: 'Android',
@@ -16,7 +17,6 @@ config.capabilities = [
     'appium:app': process.env.ANDROID_APP,
     'appium:newCommandTimeout': 2400,
     'appium:chromedriverDisableBuildCheck': true,
-
   },
 ];
 
