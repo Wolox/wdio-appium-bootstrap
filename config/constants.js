@@ -1,3 +1,3 @@
 module.exports = {
-  DEFAULT_TIMEOUT: 21000
+  DEFAULT_TIMEOUT: 21000;
 };
