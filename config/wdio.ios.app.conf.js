@@ -9,8 +9,8 @@ config.capabilities = [
   {
     maxInstances: 1,
     platformName: 'iOS',
-    'appium:deviceName': 'iPhone 8',
-    'appium:platformVersion': '13.4',
+    'appium:deviceName': 'iPhone 11',
+    'appium:platformVersion': '13.7',
     'appium:orientation': 'PORTRAIT',
     'appium:automationName': 'XCUITest',
     'appium:app': process.env.IOS_APP,

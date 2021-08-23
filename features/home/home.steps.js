@@ -1,19 +1,19 @@
-import { Given, When, Then } from 'cucumber';
+import { Given, When, Then } from '@cucumber/cucumber';
 import HomeScreen from '../../screens/Home.screen';
 
-Given(/^launch the app$/, () => {
-  driver.launchApp();
+Given(/^launch the app$/, async() => {
+  await driver.launchApp();
 });
 
-When(/^i am in the home screen$/, () => {
-  HomeScreen.waitForIsShown();
+When(/^i am in the home screen$/, async() => {
+  await HomeScreen.waitForIsShown();
 });
 
-Then(/^i should see a the text (.*)$/, text => {
-  const textElement = HomeScreen.getElementByText(text);
-  expect(textElement.isDisplayed()).toBe(true);
+Then(/^i should see a the text (.*)$/, async text => {
+  const textElement = await HomeScreen.getElementByText(text);
+  expect(await textElement.isDisplayed()).toBe(true);
 });
 
-Then(/^i close the app/, () => {
-  driver.closeApp();
+Then(/^i close the app/, async() => {
+  await driver.closeApp();
 });
