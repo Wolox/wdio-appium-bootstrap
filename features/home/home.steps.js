@@ -14,6 +14,6 @@ Then(/^i should see a the text (.*)$/, async text => {
   expect(await textElement.isDisplayed()).toBe(true);
 });
 
-Then(/^i close the app/, () => {
-  driver.closeApp();
+Then(/^i close the app/, async() => {
+  await driver.closeApp();
 });
