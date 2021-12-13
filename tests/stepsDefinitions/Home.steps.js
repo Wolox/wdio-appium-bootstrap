@@ -1,5 +1,5 @@
 import { Given, When, Then } from '@cucumber/cucumber';
-import HomeScreen from '../../screens/Home.screen';
+import HomeScreen from '../screenObjects/Home.screen';
 
 Given(/^launch the app$/, async() => {
   await driver.launchApp();
